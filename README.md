@@ -68,6 +68,34 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Lembre-se: o importante não é vencer, é se divertir! (Ok, mentira, é vencer mesmo! 😄)
 
+## 🌐 Publicando no GitHub Pages
+
+Para publicar seu projeto no GitHub Pages, siga estes passos:
+
+1. Certifique-se de que seu repositório está no GitHub
+2. Vá para as configurações do seu repositório (Settings)
+3. Role até a seção "GitHub Pages" (geralmente na barra lateral esquerda)
+4. Em "Source", selecione a branch `gh-pages`
+5. Clique em "Save"
+6. Aguarde alguns minutos e seu site estará disponível em:
+   `https://seu-usuario.github.io/project--damas-with-AI`
+
+> 💡 **Dica**: Se você estiver usando um repositório com nome diferente, substitua `project--damas-with-AI` pelo nome do seu repositório.
+
+### 🔄 Deploy Automático
+
+Este projeto está configurado com GitHub Actions para realizar deploy automático no GitHub Pages. O deploy acontece automaticamente quando:
+
+- Um novo commit é feito na branch principal (`main` ou `master`)
+- Um Pull Request é aprovado e mergeado na branch principal
+
+Para configurar o deploy automático em seu próprio repositório:
+
+1. Crie a pasta `.github/workflows` no seu repositório
+2. Adicione o arquivo `deploy.yml` com o conteúdo fornecido
+3. Faça commit e push das alterações
+4. O GitHub Actions irá automaticamente configurar o workflow
+
 ---
 
 <a name="english"></a>
@@ -135,6 +163,34 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 🎮 Have Fun!
 
 Remember: it's not about winning, it's about having fun! (Just kidding, it's totally about winning! 😄)
+
+## 🌐 Publishing on GitHub Pages
+
+To publish your project on GitHub Pages, follow these steps:
+
+1. Make sure your repository is on GitHub
+2. Go to your repository's Settings
+3. Scroll down to the "GitHub Pages" section (usually in the left sidebar)
+4. Under "Source", select the `gh-pages` branch
+5. Click "Save"
+6. Wait a few minutes and your site will be available at:
+   `https://your-username.github.io/project--damas-with-AI`
+
+> 💡 **Tip**: If you're using a different repository name, replace `project--damas-with-AI` with your repository name.
+
+### 🔄 Automatic Deployment
+
+This project is configured with GitHub Actions for automatic deployment to GitHub Pages. The deployment happens automatically when:
+
+- A new commit is made to the main branch (`main` or `master`)
+- A Pull Request is approved and merged into the main branch
+
+To set up automatic deployment in your own repository:
+
+1. Create the `.github/workflows` folder in your repository
+2. Add the `deploy.yml` file with the provided content
+3. Commit and push the changes
+4. GitHub Actions will automatically set up the workflow
 
 ---
 Made with ❤️ and ☕
