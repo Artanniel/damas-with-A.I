@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damas with A.I.</title>
+  <link rel="stylesheet" crossorigin href="https://artanniel.github.io/damas-with-A.I/assets/index-C2LViEPz.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Player Setup Screen -->
+        <div id="playerSetup" class="screen">
+            <div class="setup-container">
+                <h1>Damas with A.I.</h1>
+                <form id="playerForm">
+                    <div class="form-group">
+                        <label for="playerName">Enter Your Name</label>
+                        <input type="text" id="playerName" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="apiKey">Google Gemini API Key</label>
+                        <input type="password" id="apiKey" required placeholder="Enter your API key">
+                        <small class="help-text">Your API key will be used for AI interactions</small>
+                    </div>
+                    <button type="submit">Start Game</button>
+                    <div class="container">
+                        <a href="https://github.com/Artanniel/" target="_blank">
+                            <img class="github-icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+                        </a>
+                        <a href="https://github.com/Artanniel/" target="_blank">
+                            <div class="text">Artan Tech</div>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen hidden">
+            <h1>Damas with A.I.</h1>
+            
+            <div class="game-container">
+                <div class="game-content">
+                    <div class="scores">
+                        <div class="score-item">
+                            <h2 id="playerNameDisplay"></h2>
+                            <div class="score">
+                                <span class="trophy">🏆</span>
+                                <span id="playerScore">0</span>
+                            </div>
+                        </div>
+                        <div class="score-item">
+                            <h2>AI Opponent</h2>
+                            <div class="score">
+                                <span class="trophy">🏆</span>
+                                <span id="aiScore">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="board" class="board"></div>
+
+                    <div id="winnerMessage" class="winner-message hidden">
+                        <h2></h2>
+                        <button onclick="resetGame()">Play Again</button>
+                    </div>
+                </div>
+
+                <div class="chat-box">
+                    <div class="chat-header">
+                        <span class="chat-icon">💬</span>
+                        <h2>Game Chat</h2>
+                    </div>
+                    <div id="chatMessages" class="chat-messages"></div>
+                    <form id="chatForm" class="chat-form">
+                        <input type="text" id="messageInput" placeholder="Type a message...">
+                        <button type="submit">
+                            <span class="send-icon">➤</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <a href="https://github.com/Artanniel/" target="_blank">
+                    <img class="github-icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+                </a>
+                <a href="https://github.com/Artanniel/" target="_blank">
+                    <div class="text">Artan Tech</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/types.js"></script>
+    <script src="js/gemini.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
