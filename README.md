@@ -15,6 +15,14 @@ Bem-vindo ao Projeto  Damas com IA! Este é um jogo de damas moderno e divertido
 - Animações suaves
 - Totalmente em português
 
+---
+
+## 🏁 Git Hub Page
+
+Você pode visitar o projeto no Github Pages através do link: <a href="https://artanniel.github.io/damas-with-A.I/" target="_blank">Damas with A.I</a>
+
+---
+
 ## 🚀 Como Jogar
 
 1. Clone este repositório:
@@ -110,6 +118,14 @@ Welcome to Project  Checkers with AI! This is a modern and fun checkers game tha
 - Intuitive and friendly design
 - Smooth animations
 - Available in Portuguese and English
+
+---
+
+## 🏁 Git Hub Page
+
+You can visit the project on Github Pages via the link: <a href="https://artanniel.github.io/damas-with-A.I/" target="_blank">Damas with A.I</a>
+
+---
 
 ## 🚀 How to Play
 
